@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            box-sizing: border-box;
+
+        }
+       
+        [class*="div"]{
+            width: 100%;
+            /* background-color: aqua; */
+        padding: 5px;
+        overflow: hidden;
+        }
+        .wrapper{
+           display: grid;
+           grid-template-columns:20% 30% 30% 20%;
+           grid-template-rows: 20% 20% 25% 25%;
+           /* grid-column-gap: 10px;
+           grid-row-gap: 10px; */
+           max-width: 100vw;
+           /* height: 80vh; */
+           /* background-color: cadetblue; */
+           padding: 10px;
+        
+
+        }
+        img[alt="res"]{
+            width: 100%;
+            height: 100%;
+            transition: transform 0.5s linear;
+        }
+        img[alt="res"]:hover{
+            transform: scale(1.6) rotate(10deg);
+        }
+.div4{
+    grid-area:2/1/ span 2/span 2;
+  
+}
+.div10{
+grid-column: 3/4;
+}
+.em{
+    margin: 20px auto;
+    background-color: #efefef;
+    font-size: 24px;
+}
+.em span{
+    font-size: 0.5em;
+}
+        </style>
+</head>
+<body dir="rtl">
+    <div class="wrapper">
+    <div class="div1"><img src="../img/1.jpg" alt="res"></div>
+    <div class="div2"><img src="../img/2.jpeg" alt="res"></div>
+    <div class="div3"><img src="../img/3.jpeg" alt="res"></div>
+    <div class="div4"><img src="../img/4.jpg" alt="res"></div>
+    <div class="div5"><img src="../img/1.jpg" alt="res"></div>
+    <div class="div6"><img src="../img/1.jpg" alt="res"></div>
+    <div class="div7"><img src="../img/3.jpeg" alt="res"></div>
+    <div class="div8"><img src="../img/2.jpg" alt="res"></div>
+    <div class="div9"><img src="../img/2.jpeg" alt="res"></div>
+    <div class="div10"><img src="../img/2.jpeg" alt="res"></div>
+   </div>
+   <p style="font-size: 1.5rem;">My Name Is Kianoosh Azizi</p>
+   <div class="em">
+    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias suscipit, non, cupiditate officiis modi exercitationem voluptatum dolor quia cum corporis illum quibusdam explicabo eaque voluptas ad molestiae. Fuga, tempora nemo!</span>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, optio enim asperiores, velit temporibus, nihil ab 
+    </p>
+   </div>
+</body>
+</html>

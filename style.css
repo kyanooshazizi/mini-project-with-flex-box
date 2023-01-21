@@ -1,0 +1,103 @@
+* {
+    list-style-type: none;
+    direction: rtl;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+nav ul {
+    background-color: blue;
+    /* height: 60px; */
+    /* padding: 10px; */
+    display: flex;
+    height: 60px;
+    align-items: center;
+}
+
+nav ul li {
+    /* display: inline; */
+    /* margin: 10px; */
+    padding: 10px;
+}
+
+.header img {
+    width: 100%;
+}
+
+.header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header h4 {
+    position: absolute;
+    background-color: rgb(240, 248, 255, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.section1 {
+    display: flex;
+    max-width: 1200px;
+    margin: 10px auto;
+    height: auto;
+}
+
+.section1 .ch1 {
+    flex: 25%;
+    width: 100%;
+}
+
+.section1 .ch2 {
+    flex: 75%;
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+}
+
+.section1 .ch2 div {
+    margin: 10px;
+    width: 30%;
+    padding: 10px;
+}
+
+.section1 .ch2 div p {
+    text-align: center;
+    padding: 5px;
+}
+
+.section1 .ch2 div img {
+    width: 100%;
+}
+
+.section1 .ch1 .cart {
+    margin-bottom: 10px;
+    background-color: antiquewhite;
+    border-radius: 5px;
+}
+
+.section1 .ch1 .cart p {
+    border-bottom: 1px solid #b0b0b0;
+    padding: 5px;
+    width: 80%;
+}
+
+@media screen and (max-width:600px) {
+    .section1 {
+        display: flex;
+        flex-direction: column;
+    }
+    .section1 .ch2 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .section1 .ch2 div {
+        margin: 10px;
+        width: 100%;
+        padding: 10px;
+    }
+}
